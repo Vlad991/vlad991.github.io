@@ -1,0 +1,91 @@
+img{
+	border: 0;
+}
+
+.header{
+	display: inline-block;  //когда марджин не отсчитывается корректно
+	width: 100%;
+}
+
+.header__logo{
+	float: left;
+}
+
+.header__menu{
+	float: right;
+}
+
+.menu__item{
+	display: inline-block;
+}
+
+.clearfix{
+	display: block;
+	clear: both;
+}
+
+.categories, .sales{
+	width: 100%;
+}
+
+.layout{
+	display: table;
+	width: 100%;
+}
+
+.layout__col{
+	display: table-cell;
+	vertical-align: top;
+}
+
+.layout__col_center{
+	text-align: center;
+}
+
+.layout__col_right{
+	text-align: right;
+}
+
+.sale-info_new-collection{
+	background-position: 0 0;
+}
+
+.sale-info_spirit-collection{
+	background-position: right 0;
+}
+
+.category{
+	display: inline-block;
+	position: relative;
+}
+
+.category__link{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.sizes-menu__item, .slider-controls__item{
+	display: table-cell;
+}
+
+.subscribe-form__textfiled{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
