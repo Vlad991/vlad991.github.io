@@ -30,7 +30,7 @@ li {
 
 .container {}
 
-/*.................................................Header..........................................................................*/
+/*.................................................Header........................................................................*/
 
 .container__header {}
 
@@ -118,15 +118,44 @@ li {
 }
 
 .menu__link {
+    display: block;
     text-decoration: none;
     color: #4d4d4d;
     text-transform: uppercase;
     font-family: "Myriad Pro";
     padding-bottom: 5px;
+    width: 81px;
+    margin: 0 auto;
 }
 
 .menu__link:hover {
     border-bottom: 2px #4d4d4d solid;
+}
+
+.menu__link_home {
+    width: 45px;
+}
+
+.menu__link_about {
+    width: 51px;
+}
+
+.menu__link_service {
+    width: 59px;
+}
+
+.menu__link_portfolio {
+}
+
+.menu__link_contact {
+    width: 68px;
+}
+
+.link__img {
+    display: none;
+}
+
+.link__inscription {
 }
 	
 .header__luis-cover {
@@ -466,7 +495,8 @@ li {
     margin: 0 0 0 62px;
 }
 
-.portrait-foto {}
+.portrait-foto {
+}
 
 .article__lettering {
     margin: 0 0 0 31px;
@@ -1031,6 +1061,270 @@ li {
 
     .sprite {
         width: 93%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .container__fixed {
+        width: 88%;
+    }
+
+    .header__menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .menu {
+        background: #fff;
+        width: 100%;
+        border-top: #333 1px solid;
+    }
+
+    .menu__item{
+        width: 78px;
+    }
+
+    .menu__link {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .link__img {
+        display: block;
+        width: 21px;
+        margin: 3px auto;
+        height: 22px;
+    }
+
+    .link__inscription {
+        font-size: 10px;
+        margin: 4px auto;
+    }
+
+    .header__luis-cover {
+        /* position: absolute; */
+        left: 13%;
+    }
+
+    .luis-cover {
+        width: 113%;
+    }
+
+    .luis-cover__name-card {
+        margin-top: 156px;
+        width: 100%;
+    }
+
+    .name-card__heading {
+        font-size: 42px;
+        height: 50px;
+    }
+
+    .luis-cover__luis-foto {
+    /* float: right; */
+    position: absolute;
+    left: 26%;
+    }
+
+    .luis-foto {
+    width: 138px;
+    }
+
+    .name-card__contact-buttons {margin: 11px 0 0;width: 90%;}
+
+    .contact-buttons {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-btn {
+        height: 44px;
+        line-height: 46px;
+        font-size: 13px;
+    }
+
+    .heading {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .heading::before {
+        width: 39px;
+        margin: 0 auto -8px;
+        height: 2px;
+    }
+
+    .heading_know-more::before {
+        margin: 0 0 -8px 0;
+    }
+
+    .know-info__heading {
+        margin: 0 auto;
+    }
+
+    .know-info__content {
+        width: 100%;
+    }
+
+    .know-info__contact-btn {
+        margin: 16px 0 0;
+    }
+
+    .know-more__know-img {
+        display: none;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .services {
+    }
+
+    .services__pictures {
+        margin:  0;
+    }
+
+    .picture-item {
+        width: 125px;
+        margin: 10px auto;
+    }
+
+    .pictures__picture {
+        margin: 0;
+    }
+
+    .picture-title {font-size: 16px;}
+
+    .layout__blocks_6 {
+
+    }
+
+    .diagram {
+        height: 200px;
+    }
+
+    .persentages {
+        font-size: 10px;
+    }
+
+    .persentages__item {
+        margin: 0 auto 11px;
+        width: 20px;
+    }
+
+    .chart__chart-points {
+        margin: 0 0 0 18px;
+        width: 89%;
+    }
+
+    .portfolio__slider {width: 282px;margin: 0 auto;}
+
+    .slider {
+    }
+
+    .testimonials__article {
+        margin: 0 auto;
+    }
+
+    .article {
+        padding: 0 0 17px;
+        margin: 0 0 26px 0;
+    }
+
+    .article__portrait-foto {width: 159px;margin: 11px auto;}
+
+
+    .hello__hello-form {width: 265px;margin: 14px auto;}
+
+    .layout_none {
+        display: inline-block;
+    }
+
+    .results {
+        height: 216px;
+    }
+
+    .results__results-layout {
+        margin: 41px 0 0;
+    }
+
+    .results-layout__result-item {
+    margin: 0;
+    }
+
+    .result-picture {
+        width: 47px;
+    }
+
+    .result-item__result-picture {
+        width: 50px;
+        height: 63px;
+    }
+
+    .results-layout__result-item:first-child .result-item .result-item__result-picture {
+        margin: 0;
+    }
+
+    .result-item__result-title {
+        font-size: 14px;
+    }
+
+    .container__hello {
+        margin: 29px 0 0;
+    }
+
+    .hello__heading {
+        margin: 22px 0 0;
+    }
+
+    .hello-form_center {
+        width: 100%;
+    }
+
+    .hello-form__name {margin: 12px auto;width: 241px;}
+
+    .hello-form__email {
+        width: 241px;
+        margin: 0 auto;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .hello-form__message {
+        width: 241px;
+        margin: 14px auto;
+    }
+
+    .message {
+        width: 96%;
+        height: 100px;
+    }
+
+    .sprite {
+        width: 200px;
+    }
+
+    .hello-footer__all-right {
+    width: 186px;
+    font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 540px) {
+    .layout_540none {
+        display: inline-block;
     }
 }
 
