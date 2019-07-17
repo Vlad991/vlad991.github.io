@@ -363,14 +363,16 @@ li {
 
 .container__skills {}
 
-.skills {}
+.skills {
+    min-height: 194px;
+}
 
 .skills__heading {
     margin: 116px 0 0;
 }
 
 .skills__diagram {
-    margin: 40px auto 94px;
+    margin: 40px auto 109px;
     width: 1092px;
 }
 
@@ -381,7 +383,7 @@ li {
     padding: 0.01%;
 }
 
-.diagram__persentages {margin-top: 10px;width: 21px;}
+.diagram__persentages {margin-top: 5px;width: 21px;}
 
 .persentages {width: 100%;font-family: 'Asap', sans-serif;font-size: 15px;color: #4d4d4d;/* text-align: center; */}
 
@@ -390,8 +392,8 @@ li {
 .pers-item {width: 100%;}
 
 .diagram__chart {
-    margin: 15px auto;
-    width: 952px;
+    margin: 15px 0 0 0;
+    width: 950px;
 }
 
 .chart {width: 100%;}
@@ -481,7 +483,10 @@ li {
     margin: 126px 0 0;
 }
 
-.testimonials__article {margin: 49px auto 49px;width: 81.6%;}
+.testimonials__article {
+    margin: 49px auto 49px;
+    width: 81.6%;
+}
 
 .article {
     width: 100%;
@@ -489,21 +494,82 @@ li {
     border: #212121 1px solid;
     box-sizing: border-box;
     padding: 81px 58px 27px;
+    transition: all 300ms ease-out;
+}
+
+.article:hover {
+    box-shadow: 0 0 50px inset rgba(0, 0, 0, 0.3);
+}
+
+.article__arrow {
+    width: 153px;
+    height: 42px;
+    margin: 64px auto;
+}
+
+.arrow {
+    width: 80%;
+    display: none;
+    transition: all 300ms ease-out;
+}
+
+.article:hover .arrow {
+    display: block;
+}
+
+.article:hover .arrow:hover {
+    width: 100%;
+}
+
+.arrow_right {
+
+}
+
+.arrow_left {
+    transform: rotate(180deg);
 }
 
 .article__portrait-foto {
-    margin: 0 0 0 62px;
+    margin: 0 0 0 29px;
 }
 
 .portrait-foto {
 }
 
+.portrait-foto_1 {
+    width: 107px;
+}
+
+.portrait-foto_2 {
+
+}
+
+.portrait-foto_3 {width: 110px;}
+
+.portrait-foto_hide {
+    display: none;
+}
+
 .article__lettering {
-    margin: 0 0 0 31px;
+    margin: 0 31px;
 }
 
 .lettering {
     font-family: 'Asap', sans-serif;
+}
+
+.lettering_1 {
+}
+
+.lettering_2 {
+
+}
+
+.lettering_3 {
+}
+
+.lettering_hide {
+    display: none;
 }
 
 .lettering__let-title {
@@ -859,7 +925,7 @@ li {
     }
 
     .diagram__chart {
-    width: 98%;
+    width: 96%;
     }
 
     .chart__chart-img {
@@ -876,7 +942,7 @@ li {
     }
 
     .persentages__item {
-        margin: 0 0 32px 0;
+        margin: 0 0 48px 0;
     }
 
     .portfolio__heading {
@@ -907,6 +973,11 @@ li {
 
     .sprite {
         width: 85%;
+    }
+
+    .portfolio__slider {
+        width: 819px;
+        margin: 9px auto;
     }
 }
 
@@ -983,14 +1054,31 @@ li {
 
     .diagram {
         min-height: 288px;
+        width: 99%;
     }
 
+    .diagram__chart {
+        width: 774px;
+    }
+
+    .diagram__persentages {margin-top: 10px;}
+
     .persentages__item {
-        margin: 0 0 23px 0;
+        margin: 0 10px 33px 0;
+        width: 35px;
     }
 
     .slide {
         width: 282px;
+    }
+
+    .portfolio__slider {
+        width: 641px;
+        margin: 9px auto;
+    }
+
+    .slider {
+        width: 100%;
     }
 
     .slide__img {
@@ -1200,10 +1288,15 @@ li {
     }
 
     .services {
+    min-height: 390px;
     }
 
     .services__pictures {
         margin:  0;
+    }
+
+    .pictures {
+        width: 89%;
     }
 
     .picture-item {
@@ -1231,8 +1324,12 @@ li {
         font-size: 7px;
     }
 
+    .diagram__persentages{
+        margin-top: 12px;
+    }
+
     .persentages__item {
-        margin: 0 auto 9px;
+        margin: 0 auto 37px;
         width: 19px;
     }
 
@@ -1245,7 +1342,7 @@ li {
     }
 
     .chart__chart-points {
-        margin: 0 0 0 20px;
+        margin: 0 0 20px 20px;
         width: 85%;
     }
 
@@ -1288,6 +1385,15 @@ li {
 
     .portrait-foto {
         box-shadow: 0 0 10px rgba(3, 3, 3, 0.3);
+    }
+
+    .article__arrow {
+        width: 195px;
+        margin: 208px auto;
+    }
+
+    .arrow {
+        display: block;
     }
 
 
@@ -1469,17 +1575,44 @@ li {
     background-position-x: -6px;
     background-position-y: -312px;
 }
+
+    .portfolio__heading {
+        margin: 20px 0 0;
+    }
     
 }
+
+@media screen and (max-width: 600px) {
+    .persentages__item {
+        margin: 0 auto 25px;
+        width: 19px;
+    }
+}
+
 
 @media screen and (max-width: 540px) {
     .layout_540none {
         display: block;
     }
+
+    .persentages__item {
+        margin: 0 auto 22px;
+        width: 19px;
+    }
 }
 
 
+@media screen and (max-width: 480px) {
+    .services {
+    padding-bottom: 20px;
+    }
 
+    .persentages__item {margin: 0 auto 18px;width: 19px;}
+}
+
+@media screen and (max-width: 320px) {
+    .persentages__item {margin: 0 auto 9px;width: 19px;}
+}
 
 
 
